@@ -6,7 +6,7 @@ import Input from "antd/es/input";
 import CommonTextField from "../CommonTextField";
 import Space from "antd/es/space";
 import { Spin } from "antd";
-import { validatorField } from "@/lib/utils/utils";
+import { validatorField } from "../../../lib/utils/utils";
 import { CommonInputFieldProps } from "@/types/common";
 
 /**

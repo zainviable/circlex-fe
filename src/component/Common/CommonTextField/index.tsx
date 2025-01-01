@@ -1,4 +1,4 @@
-import { CommonTextFieldProps } from "@/src/types/common";
+import { CommonTextFieldProps } from "../../../types/common";
 import React from "react";
 
 /**

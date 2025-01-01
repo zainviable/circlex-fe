@@ -1,0 +1,21 @@
+.menuItem:hover h3 {
+  color: white;
+}
+.menuItem:hover > div img:first-child {
+  display: none;
+}
+.menuItem:hover > div img:last-child {
+  display: flex;
+}
+.menuItem:hover {
+  box-shadow: 0px 20px 50px 0px #3745571a;
+}
+.MenuWrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+.MenuWrapper::-webkit-scrollbar-thumb {
+  background: rgba(154, 154, 154, 0.43);
+  border-radius: 10px;
+}

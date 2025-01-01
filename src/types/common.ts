@@ -1,7 +1,7 @@
 import { FormInstance, FormItemProps, InputRef, RadioChangeEvent } from "antd";
 import { SwitchChangeEventHandler } from "antd/es/switch";
 import { InputNumberProps } from "antd/lib";
-import { ISelectType } from "./station";
+// import { ISelectType } from "./station";
 import dayjs, { Dayjs } from "dayjs";
 import { CheckboxChangeEvent } from "antd/es/checkbox";
 import React, { Dispatch, FocusEventHandler, SetStateAction } from "react";
@@ -79,8 +79,8 @@ export type CommonInputSelectFieldProps = {
   loading?: boolean;
 
   // select field props
-  options?: ISelectType[];
-  suffixOptions?: ISelectType[];
+  // options?: ISelectType[];
+  // suffixOptions?: ISelectType[];
   selectName?: string | (string | number)[];
   suffixSelectName?: string | (string | number)[];
   selectRules?: FormItemProps["rules"];
@@ -247,7 +247,7 @@ export type CommonSelectProps = {
   name: string | (string | number)[];
   labelClassName?: string;
   rules?: FormItemProps["rules"];
-  options: ISelectType[];
+  // options: ISelectType[];
   placeholder?: string;
   defaultValue?: string;
   className?: string;
@@ -259,7 +259,7 @@ export type CommonSelectProps = {
   onDeselect?: (value: string, option: any) => void;
   testId?: string;
   dropDownRenderChild?: React.ReactNode | undefined;
-  optionRender?: ((_: ISelectType) => React.ReactNode) | undefined;
+  // optionRender?: ((_: ISelectType) => React.ReactNode) | undefined;
   reference?: React.Ref<HTMLInputElement>;
   isRequired?: boolean;
   onSearch?: (_: string) => void;
