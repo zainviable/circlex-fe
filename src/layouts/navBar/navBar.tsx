@@ -1,13 +1,13 @@
 "use client";
-import SearchBar from "../searchBar/searchBar";
-import Heading from "../Heading/heading";
-import AdminBar from "../adminBar/adminBar";
+import SearchBar from "../../component/searchBar/searchBar";
+import Heading from "../../component/Heading/heading";
+import AdminBar from "../../component/adminBar/adminBar";
 import { Drawer } from "antd";
 import MenuItem from "../Menu/MenuItem";
 import { useState } from "react";
 import Images from "../../lib/image";
 import { MenuItems } from "../../lib/utils/constant";
-import NotificationBar from "../adminBar/notificationBar";
+import NotificationBar from "../../component/adminBar/notificationBar";
 
 function NavBar() {
   const [open, setOpen] = useState(false);

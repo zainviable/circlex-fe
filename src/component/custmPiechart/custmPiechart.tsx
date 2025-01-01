@@ -4,7 +4,8 @@ import React from "react";
 import { Pie } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import Heading from "../Heading/heading";
+import CommonHeading from "../Common/CommonHeading";
+
 import LegendLabels from "./LegendLabels"; // Import the LegendLabels component
 
 ChartJS.register(ArcElement, Tooltip, ChartDataLabels);
@@ -35,12 +36,19 @@ const CustomPieChart: React.FC = () => {
   return (
     <>
       <div className="pieDropshadow bg-white lg:w-[50%] w-[100%]  flex flex-col items-center mx-auto py-[50px] px-[30px] rounded-[40px]">
-        <Heading
+        {/* <Heading
           text="User Distribution"
           textColor="#292D30"
           Fontsize="text-[24px]"
           LineHeight="leading-[24px]"
           FontWeight="font-bold"
+        /> */}
+        <CommonHeading
+          text="User Distribution"
+          color="#292D30"
+          fontSize="24px"
+          fontWeight="700"
+          lineHeight="24px"
         />
         <div
           style={{ width: "100%", maxWidth: "380px", margin: "0 auto" }}

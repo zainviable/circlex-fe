@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Images from "@/app/lib/Images"; // Assuming your images are stored here
-import Link from "next/link";
+import Images from "../../lib/image"; // Assuming your images are stored here
 
 // Define types for props
 interface LoginHeaderProps {
@@ -19,8 +17,8 @@ const LoginHeader: React.FC<LoginHeaderProps> = ({
         {backBtnVisible && (
           <div className="back-btn w-[5%] flex">
             {/* Back Button Section (Left side) */}
-            <Link href={backBtnLink} className="flex items-center space-x-2">
-              <Image
+            <a href={backBtnLink} className="flex items-center space-x-2">
+              <img
                 src={Images.backBtn} // This is the path to your back button image
                 alt="Back"
                 width={40} // Adjust width as per your design
@@ -29,7 +27,7 @@ const LoginHeader: React.FC<LoginHeaderProps> = ({
               <span className="text-[14px] text-[rgba(0, 145, 191, 1)]">
                 Back
               </span>
-            </Link>
+            </a>
           </div>
         )}
 
@@ -39,7 +37,7 @@ const LoginHeader: React.FC<LoginHeaderProps> = ({
           }`}
         >
           {/* Centered Circle Icon Section */}
-          <Image
+          <img
             src={Images.CircleIcon} // This is the path to your circle icon or image
             alt="Circle Icon"
             width={80} // Adjust width as per your design

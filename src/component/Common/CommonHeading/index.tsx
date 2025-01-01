@@ -1,5 +1,5 @@
 import React from "react";
-import { CommonHeadingProps } from "@/app/types/common";
+import { CommonHeadingProps } from "../../../types/common";
 import Title from "antd/es/typography/Title";
 
 /**
@@ -54,9 +54,9 @@ const CommonHeading: React.FC<CommonHeadingProps> = ({
     <Title
       level={level} // Ant Design's Title level
       title={title} // HTML title attribute
-      className={`${className || ""} ${fontSize ? fontSize : "custom-heading-1"} text-black2 ${
-        onClick ? "cursor-pointer" : ""
-      }`} // CSS classes including cursor-pointer if onClick is provided
+      className={`${className || ""} ${
+        fontSize ? fontSize : "custom-heading-1"
+      } text-black2 ${onClick ? "cursor-pointer" : ""}`} // CSS classes including cursor-pointer if onClick is provided
       style={{
         width, // Set the width of the heading element
         margin: 0, // Remove default margin

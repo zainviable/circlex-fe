@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Table, Button, Space, Checkbox, Pagination } from "antd";
-import Image from "next/image";
-import Images from "@/app/lib/Images";
+import Images from "../../lib/image";
 
 // Define the columns of the table
 const columns = [
@@ -17,7 +16,7 @@ const columns = [
     dataIndex: "user",
     render: (text: string, record: any) => (
       <div className="flex items-center">
-        <Image
+        <img
           src={record.image}
           alt="User"
           className="w-8 h-8 rounded-full mr-3"
@@ -62,7 +61,7 @@ const columns = [
           borderColor: "rgba(49, 55, 74, 1)",
         }}
       >
-        <Image src={Images.Eye || ""} alt="View" height={16} width={16} />
+        <img src={Images.Eye || ""} alt="View" height={16} width={16} />
         View
       </Button>
     ),

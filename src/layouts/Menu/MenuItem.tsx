@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../Heading/heading";
+import Heading from "../../component/Heading/heading";
 import Style from "./style.module.css";
 
 interface menuItemProps {

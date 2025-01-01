@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import { Input, Button, Checkbox, Form, Typography } from "antd";
-import Image from "next/image";
-import Link from "next/link";
-import Images from "@/app/lib/Images"; // Assuming your images are stored here
+import Images from "../../lib/image"; // Assuming your images are stored here
 
 const { Title, Text } = Typography;
 
@@ -84,12 +82,12 @@ function Login() {
               </Checkbox>
             </Form.Item>
             <Form.Item style={{ textAlign: "center" }}>
-              <Link
+              <a
                 className="text-[rgba(0,145,191,1)] font-bold font-urbanist"
                 href="#"
               >
                 Forgot Password?
-              </Link>
+              </a>
             </Form.Item>
           </div>
           <Form.Item>
@@ -105,7 +103,7 @@ function Login() {
 
           <Form.Item style={{ textAlign: "center" }}>
             <Text className="font-urbanist font-bold text-[rgba(30, 41, 59, 1)]">
-              Don&apos;t have an account? <Link href="#">Sign Up</Link>
+              Don&apos;t have an account? <a href="#">Sign Up</a>
             </Text>
           </Form.Item>
         </Form>
@@ -120,7 +118,7 @@ function Login() {
           position: "relative",
         }}
       >
-        <Image
+        <img
           src={Images.loginBanner} // Assuming the image is stored in Images
           alt="Pharmacy Background"
           layout="fill"

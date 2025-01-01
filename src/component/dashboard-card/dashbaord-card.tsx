@@ -1,7 +1,7 @@
-import Image from "next/image";
-import images from "@/app/lib/Images";
-import Heading from "../../components/Heading/heading"; // Import the Heading component
-
+import images from "../../lib/image";
+// import Heading from "../../component/Heading/heading"; // Import the Heading component
+// import Title from "antd/es/typography/Title";
+import CommonHeading from "../Common/CommonHeading";
 interface DashboardCardProps {
   usersCount?: number;
   cardWidth?: string;
@@ -22,16 +22,22 @@ const DashboardCard: React.FC<DashboardCardProps> = ({
       className={`${cardWidth} gap-4 flex bg-white flex-col items-center rounded-xl py-[29px] px-[31px]`}
       style={{ boxShadow: "0px 4px 13px rgba(0, 0, 0, 0.1)" }}
     >
-      <Image src={imageSrc} alt="profileUser" height={40} width={40} />
+      <img src={imageSrc} alt="profileUser" height={40} width={40} />
       {/* Using the Heading component */}
-      <Heading
+      <CommonHeading
         text={title}
-        textColor="text-gray-700"
-        Fontsize="text-xl"
-        FontWeight="font-semibold"
-        LineHeight="leading-6"
+        color="#000"
+        fontSize="20px"
+        fontWeight="700"
+        lineHeight="24px"
       />
-      <h4 className={`font-semibold text-3xl ${color}`}>{usersCount}</h4>
+      <CommonHeading
+        text={usersCount}
+        color="rgba(23, 106, 69, 1)"
+        fontSize="32px"
+        fontWeight="600"
+        lineHeight="24px"
+      />
     </div>
   );
 };
