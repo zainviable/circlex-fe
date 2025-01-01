@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./global.css";
+import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 import Menu from "../src/component/Menu/Menu";
