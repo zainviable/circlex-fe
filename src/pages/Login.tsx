@@ -5,7 +5,7 @@ import Login from "../component/login/login-form";
 
 const LoginPage = () => {
   return (
-    <div className="mt-[120px] px-[20px]">
+    <div className="">
       <LoginHeader />
       <Login />
       <LoginFooter />

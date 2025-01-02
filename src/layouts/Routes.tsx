@@ -1,7 +1,7 @@
 import LoginPage from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
 
-const routes = [
+const uniqueRoutes = [
   {
     path: "/",
     component: <Dashboard />,
@@ -12,4 +12,4 @@ const routes = [
   },
 ];
 
-export default routes;
+export default uniqueRoutes;

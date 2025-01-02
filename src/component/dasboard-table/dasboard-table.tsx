@@ -155,11 +155,10 @@ const UserTable = () => {
   return (
     <>
       <Table
-        className="dashboardTable overflow-x-auto"
+        className="dashboardTable overflow-x-auto mb-[20px]"
         columns={columns}
         dataSource={data}
         rowClassName="table-row"
-        style={{ marginBottom: 20 }}
         pagination={false}
       />
       <div className="pagination-parent">
@@ -168,6 +167,7 @@ const UserTable = () => {
           showSizeChanger={false}
           defaultPageSize={5}
           current={currentPage}
+          className="text-right py-[10px]"
           onChange={setCurrentPage}
           showTotal={(total, range) => (
             <span>
@@ -177,7 +177,6 @@ const UserTable = () => {
               items of <b>{total}</b>
             </span>
           )}
-          style={{ textAlign: "right", padding: "10px 0" }}
         />
       </div>
     </>

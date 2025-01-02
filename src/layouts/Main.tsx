@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
-import routes from "./Routes.tsx";
+import uniqueRoutes from "./routes";
 
 const Main = () => {
   //   const location = useLocation();
@@ -14,7 +14,7 @@ const Main = () => {
   return (
     <div className="main">
       <Routes>
-        {routes.map((route, key) => (
+        {uniqueRoutes.map((route, key) => (
           <Route key={key} path={`${route.path}`} element={route.component} />
         ))}
       </Routes>

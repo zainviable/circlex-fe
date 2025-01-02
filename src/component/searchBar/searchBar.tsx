@@ -33,9 +33,8 @@ function SearchBar({
           className="mb-[0] border-none border-[0px] border-color-[transparent]"
         >
           <Input
-            style={{ boxShadow: "none" }}
             placeholder="Search here..."
-            className="bg-transparent border-none border-[0px] border-transparent p-[0] focus:border-none focus:bg-[transparent] focus:outline-[0px] focus:border-[0px] focus:border-transparent focus:shadow-transparent hover:bg-[transparent]"
+            className="bg-transparent shadow-none border-none border-[0px] border-transparent p-[0] focus:border-none focus:bg-[transparent] focus:outline-[0px] focus:border-[0px] focus:border-transparent focus:shadow-transparent hover:bg-[transparent]"
           />
         </Form.Item>
       </Form>
